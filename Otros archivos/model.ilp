@@ -1,0 +1,148 @@
+\ Model Muestreo_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ R1: Nodos_raices[904] + Nodos_raices[2314] + Nodos_raices[2315]
+   + Nodos_raices[2316] + Nodos_raices[2317] + Nodos_raices[2318]
+   + Nodos_raices[2319] + Nodos_raices[2320] + Nodos_raices[913]
+   + Nodos_raices[1430] + Nodos_raices[1431] + Nodos_raices[1432]
+   + Nodos_raices[1433] + Nodos_raices[1434] + Nodos_raices[411]
+   + Nodos_raices[410] + Nodos_raices[665] + Nodos_raices[671]
+   + Nodos_raices[676] + Nodos_raices[804] + Nodos_raices[422]
+   + Nodos_raices[678] + Nodos_raices[680] + Nodos_raices[823]
+   + Nodos_raices[725] + Nodos_raices[1882] + Nodos_raices[2524]
+   + Nodos_raices[220] + Nodos_raices[2148] + Nodos_raices[2149]
+   + Nodos_raices[743] + Nodos_raices[1896] + Nodos_raices[744]
+   + Nodos_raices[2538] + Nodos_raices[2161] + Nodos_raices[2162]
+   + Nodos_raices[499] + Nodos_raices[2164] + Nodos_raices[2165]
+   + Nodos_raices[2166] + Nodos_raices[2167] + Nodos_raices[628] = 8
+ R3[2314]: Asignacion_de_nodo_a_muestra[2314,904]
+   + Asignacion_de_nodo_a_muestra[2314,2314]
+   + Asignacion_de_nodo_a_muestra[2314,2315]
+   + Asignacion_de_nodo_a_muestra[2314,2318]
+   + Asignacion_de_nodo_a_muestra[2314,2319]
+   + Asignacion_de_nodo_a_muestra[2314,411]
+   + Asignacion_de_nodo_a_muestra[2314,410]
+   + Asignacion_de_nodo_a_muestra[2314,665]
+   + Asignacion_de_nodo_a_muestra[2314,671]
+   + Asignacion_de_nodo_a_muestra[2314,676]
+   + Asignacion_de_nodo_a_muestra[2314,678]
+   + Asignacion_de_nodo_a_muestra[2314,680]
+   + Asignacion_de_nodo_a_muestra[2314,2149]
+   + Asignacion_de_nodo_a_muestra[2314,743]
+   + Asignacion_de_nodo_a_muestra[2314,1896]
+   + Asignacion_de_nodo_a_muestra[2314,744] = 1
+ R3[2166]: Asignacion_de_nodo_a_muestra[2166,904]
+   + Asignacion_de_nodo_a_muestra[2166,411]
+   + Asignacion_de_nodo_a_muestra[2166,410]
+   + Asignacion_de_nodo_a_muestra[2166,665]
+   + Asignacion_de_nodo_a_muestra[2166,671]
+   + Asignacion_de_nodo_a_muestra[2166,676]
+   + Asignacion_de_nodo_a_muestra[2166,678]
+   + Asignacion_de_nodo_a_muestra[2166,680]
+   + Asignacion_de_nodo_a_muestra[2166,2148]
+   + Asignacion_de_nodo_a_muestra[2166,2149]
+   + Asignacion_de_nodo_a_muestra[2166,743]
+   + Asignacion_de_nodo_a_muestra[2166,744]
+   + Asignacion_de_nodo_a_muestra[2166,2166]
+   + Asignacion_de_nodo_a_muestra[2166,2167] = 1
+ R3[628]: Asignacion_de_nodo_a_muestra[628,904]
+   + Asignacion_de_nodo_a_muestra[628,1430]
+   + Asignacion_de_nodo_a_muestra[628,1431]
+   + Asignacion_de_nodo_a_muestra[628,1432]
+   + Asignacion_de_nodo_a_muestra[628,411]
+   + Asignacion_de_nodo_a_muestra[628,410]
+   + Asignacion_de_nodo_a_muestra[628,665]
+   + Asignacion_de_nodo_a_muestra[628,671]
+   + Asignacion_de_nodo_a_muestra[628,676]
+   + Asignacion_de_nodo_a_muestra[628,678]
+   + Asignacion_de_nodo_a_muestra[628,680]
+   + Asignacion_de_nodo_a_muestra[628,2149]
+   + Asignacion_de_nodo_a_muestra[628,743]
+   + Asignacion_de_nodo_a_muestra[628,744]
+   + Asignacion_de_nodo_a_muestra[628,628] = 1
+ Root: Nodos_raices[744] = 1
+ R608: - Nodos_raices[2314] - Asignacion_de_nodo_a_muestra[2314,904]
+   + C1808 = -1
+ R622: - Nodos_raices[2314] - Asignacion_de_nodo_a_muestra[2314,2315]
+   + C1822 = -1
+ R625: - Nodos_raices[1896] - Asignacion_de_nodo_a_muestra[2314,2318]
+   + C1825 = -1
+ R628: - Nodos_raices[1896] - Asignacion_de_nodo_a_muestra[2314,2319]
+   + C1828 = -1
+ R3753: - Nodos_raices[2166] - Asignacion_de_nodo_a_muestra[2166,2148]
+   + C4953 = -1
+ R3782: - Nodos_raices[2166] - Asignacion_de_nodo_a_muestra[2166,2167]
+   + C4982 = -1
+ R3872: - Nodos_raices[680] - Asignacion_de_nodo_a_muestra[628,904] + C5072
+   = -1
+ R3877: - Nodos_raices[628] - Asignacion_de_nodo_a_muestra[628,1431]
+   + C5077 = -1
+ R3884: - Nodos_raices[2149] - Asignacion_de_nodo_a_muestra[628,411]
+   + C5084 = -1
+ R3890: - Nodos_raices[411] - Asignacion_de_nodo_a_muestra[628,410] + C5090
+   = -1
+ R3897: - Nodos_raices[410] - Asignacion_de_nodo_a_muestra[628,665] + C5097
+   = -1
+ R3905: - Nodos_raices[665] - Asignacion_de_nodo_a_muestra[628,671] + C5105
+   = -1
+Bounds
+Binaries
+ Nodos_raices[904] Nodos_raices[2314] Nodos_raices[2315] Nodos_raices[2316]
+ Nodos_raices[2317] Nodos_raices[2318] Nodos_raices[2319]
+ Nodos_raices[2320] Nodos_raices[913] Nodos_raices[1430] Nodos_raices[1431]
+ Nodos_raices[1432] Nodos_raices[1433] Nodos_raices[1434] Nodos_raices[411]
+ Nodos_raices[410] Nodos_raices[665] Nodos_raices[671] Nodos_raices[676]
+ Nodos_raices[804] Nodos_raices[422] Nodos_raices[678] Nodos_raices[680]
+ Nodos_raices[823] Nodos_raices[725] Nodos_raices[1882] Nodos_raices[2524]
+ Nodos_raices[220] Nodos_raices[2148] Nodos_raices[2149] Nodos_raices[743]
+ Nodos_raices[1896] Nodos_raices[744] Nodos_raices[2538] Nodos_raices[2161]
+ Nodos_raices[2162] Nodos_raices[499] Nodos_raices[2164] Nodos_raices[2165]
+ Nodos_raices[2166] Nodos_raices[2167] Nodos_raices[628]
+ Asignacion_de_nodo_a_muestra[2314,904]
+ Asignacion_de_nodo_a_muestra[2314,2314]
+ Asignacion_de_nodo_a_muestra[2314,2315]
+ Asignacion_de_nodo_a_muestra[2314,2318]
+ Asignacion_de_nodo_a_muestra[2314,2319]
+ Asignacion_de_nodo_a_muestra[2314,411]
+ Asignacion_de_nodo_a_muestra[2314,410]
+ Asignacion_de_nodo_a_muestra[2314,665]
+ Asignacion_de_nodo_a_muestra[2314,671]
+ Asignacion_de_nodo_a_muestra[2314,676]
+ Asignacion_de_nodo_a_muestra[2314,678]
+ Asignacion_de_nodo_a_muestra[2314,680]
+ Asignacion_de_nodo_a_muestra[2314,2149]
+ Asignacion_de_nodo_a_muestra[2314,743]
+ Asignacion_de_nodo_a_muestra[2314,1896]
+ Asignacion_de_nodo_a_muestra[2314,744]
+ Asignacion_de_nodo_a_muestra[2166,904]
+ Asignacion_de_nodo_a_muestra[2166,411]
+ Asignacion_de_nodo_a_muestra[2166,410]
+ Asignacion_de_nodo_a_muestra[2166,665]
+ Asignacion_de_nodo_a_muestra[2166,671]
+ Asignacion_de_nodo_a_muestra[2166,676]
+ Asignacion_de_nodo_a_muestra[2166,678]
+ Asignacion_de_nodo_a_muestra[2166,680]
+ Asignacion_de_nodo_a_muestra[2166,2148]
+ Asignacion_de_nodo_a_muestra[2166,2149]
+ Asignacion_de_nodo_a_muestra[2166,743]
+ Asignacion_de_nodo_a_muestra[2166,744]
+ Asignacion_de_nodo_a_muestra[2166,2166]
+ Asignacion_de_nodo_a_muestra[2166,2167]
+ Asignacion_de_nodo_a_muestra[628,904]
+ Asignacion_de_nodo_a_muestra[628,1430]
+ Asignacion_de_nodo_a_muestra[628,1431]
+ Asignacion_de_nodo_a_muestra[628,1432]
+ Asignacion_de_nodo_a_muestra[628,411]
+ Asignacion_de_nodo_a_muestra[628,410]
+ Asignacion_de_nodo_a_muestra[628,665]
+ Asignacion_de_nodo_a_muestra[628,671]
+ Asignacion_de_nodo_a_muestra[628,676]
+ Asignacion_de_nodo_a_muestra[628,678]
+ Asignacion_de_nodo_a_muestra[628,680]
+ Asignacion_de_nodo_a_muestra[628,2149]
+ Asignacion_de_nodo_a_muestra[628,743]
+ Asignacion_de_nodo_a_muestra[628,744]
+ Asignacion_de_nodo_a_muestra[628,628]
+End
